@@ -52,7 +52,7 @@ console.log( todayDate.toLocaleDateString( "en-US" , {month:"long"}));
 
 
 async function getWeather(location) {
-    let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=05805354ff5f47b9ab7182733242101&q=${location}&days=7`);
+    let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=05805354ff5f47b9ab7182733242101&q=${location}&days=7`);
     if (response.ok) {
         let data = await response.json();
         console.log(data);
