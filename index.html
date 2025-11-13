@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="icon" type="image/x-icon" href="images/forecast.jpg">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- Start of Nav -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark nav-style">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+
+        <div class="nav-logo d-flex align-items-center w-75">
+          <div class="nav-logo-img w-50">
+            <img src="images/Weather/logo.png" alt="logo" width="64" height="38">
+
+          </div>
+          <div class="nav-logo-desc p-2">
+            <h5 class="ps-2 m-0 pb-0">Weather</h5>
+            <span class=" ps-2 m-0 fs-6 font-small">tagline goes here</span>
+          </div>
+        </div>
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End of Nav -->
+
+  <!-- Start of weather table -->
+
+  <section class="hero">
+    <div class="container w-75">
+
+      <form class="find-location">
+        <input class="form-control me-2 " type="text" placeholder="Find your location..." id="searchWeather" />
+        <input type="button" value="Find" id="submit">
+      </form>
+      <div class="cards">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="weather-card rounded-start-3">
+              <div class="card-title  d-flex justify-content-between">
+                <div class="day" id="TodayDateDay"></div>
+                <div class="today-info d-flex">
+                  <div class="date me-1" id="TodayDateNumber"></div>
+                   <span id="todayDateMonth"></span>
+
+                </div>
+
+              </div>
+              <div class="card-details p-3 ">
+                <div class="location">Cairo</div>
+                <div class="degree">
+                  <div class="num" id="todayTemperature"></div>
+                </div>
+                <img id="todayIcon" src="" alt="" class="w-25">
+                <div class="status" id="todayStatus"></div>
+                <div class="additional-info my-3 ">
+                  <span class="me-2">
+                    <img src="images/Weather/imgi_3_icon-umberella.png" alt="" class="me-1">
+                    <span id="umbrella"></span> %
+                  </span>
+                  <span class="me-2">
+                    <img src="images/Weather/imgi_4_icon-wind.png" alt="" class="me-1">
+                    <span id="speed"></span>km/h
+                  </span>
+                  <span class="me-2">
+                    <img src="images/Weather/imgi_5_icon-compass.png" alt="" class="me-1">
+                    <span id="direction"></span>
+
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="forecast-card">
+              <div class="card-title text-center">
+                <div class="day" id="tomorrowDate"></div>
+              </div>
+              <div class="card-details text-center pt-5">
+                <img id="nextDayIcon" src="" alt="" class="w-25">
+                <div class="degree">
+                  <div class="num fs-3" id="nextMaxDegree"></div>
+                  <div class="num fs-6" id="nextMinDegree" style="color:grey"></div>
+                </div>
+                <div class="status" id="nextDayStatus"></div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+            <div class="weather-card rounded-end-3">
+              <div class="card-title text-center">
+                <div class="day" id="thirdDay"></div>
+              </div>
+              <div class="card-details text-center pt-5">
+                <img id="thirdDayIcon" src="" alt="" class="w-25">
+                <div class="degree">
+                  <div class="num fs-3" id="thirdDayMax"></div>
+                </div>
+                <div id="thirdDayMin" style="color:grey"></div>
+                <div class="status" id="thirdDayStatus"></div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- end of weather table -->
+
+  <!-- Start of footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="" class="subscribe-form">
+            <input class="form-control me-2 mt-5 mb-0" type="text" placeholder="Enter your email to subscribe..." />
+            <input type="submit" value="Subscribe" id="subscribe">
+          </form>
+          <p class="fs-6 m-0 p-0 ms-3 mb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+        </div>
+        <div class="col-md-3 mt-3 d-flex justify-content-center">
+          <div class="icons d-flex mt-5">
+            <div class="one-icon rounded-circle">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="one-icon rounded-circle">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="one-icon rounded-circle">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+            <div class="one-icon rounded-circle">
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+
+
+.font-small {
+    font-size: 0.7142857143em !important;
+}
+
+.nav-style {
+    padding-block: 30px !important;
+    background-color: #1E202B !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #009AD8;
+    border: #009AD8 2px solid;
+    border-radius: 30px;
+    padding: 5px 25px;
+}
+
+.nav-link {
+    transition: 0.2s all;
+    border: transparent 2px solid;
+    padding: 5px 25px;
+    border-radius: 30px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #009AD8;
+    border: #009AD8 2px solid;
+    border-radius: 30px;
+    padding: 5px 25px;
+}
+
+.nav-item {
+    margin: 5px;
+}
+
+.find-location,
+footer input[type="text"] {
+    position: relative;
+    margin-bottom: 70px;
+
+}
+
+.find-location input[type="submit"],
+.find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+
+form input[type="submit"],
+form input[type="button"],
+form button,
+form input[type="reset"],
+footer input[type="button"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+form input,
+form textarea,
+form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border-radius: 30px;
+}
+
+.find-location input[type="text"]::placeholder {
+    color: #757575;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #1e202b;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control {
+    color: white;
+    background-color: #1e202b;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 70px 0;
+    min-height: 350px;
+    background-image: url(./../images/Weather/background.png);
+}
+
+.weather-card .card-title {
+    color: #BFC1C8;
+    font-size: 14px;
+    padding: 7px;
+    background-color: #2D303D;
+    border-top-left-radius: 7px;
+}
+
+.weather-card{
+    background-color: #323544;
+    height: 400px;
+}
+
+.forecast-card .card-title{
+    background-color: #222531;
+    padding-block: 7px;
+}
+.forecast-card{
+    height: 400px;
+    background-color: #262936;
+}
+
+.weather-card .card-details , .forecast-card .card-details{
+    margin-block: 20px;
+}
+
+.location{
+    font-size: 18px;
+    color: #BFC1C8;
+}
+
+.degree{
+    font-size: 90px;
+    font-weight: 700;
+    color: white;
+}
+.status{
+    color:#009AD8;
+    font-size: 14px;
+}
+
+
+
+/* Start of footer */
+
+footer {
+    background-color: #262936;
+}
+
+.one-icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    background-color: #1E202B;
+    color: #009AD8;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.one-icon:hover {
+    background-color: #009AD8;
+    color: white;
+}
+
+footer input[type="text"]::placeholder {
+    color: #757575;
+}
+
+footer input[type="text"] {
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+    border-radius: 30px;
+}
+
+.subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+
+footer p {
+    color: #BFC1C8;
+}
